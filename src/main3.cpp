@@ -16,7 +16,7 @@ template<>char* change(char* val){
 
 int main()
 {
-	const size_t = 6;
+	const size_t n = 6;
     char arr[n]{'1', '2', '3', '4', '5','6'};
     map<char, n>(arr, change);
     for(int i =0;i<n;i++)cout<<arr[i]<<' ';
