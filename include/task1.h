@@ -15,7 +15,7 @@ bool cmp(char* a, char* b)
 }
 
 template<class T>
-void mSort(T* a, int n)
+void msort(T* a, int n)
 {
 	int step = 1;
 	T* temp = new T[n];
