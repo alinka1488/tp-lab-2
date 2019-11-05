@@ -3,7 +3,7 @@
 
 #include "task2.h"
 
-#if false
+#if true
 int32_t gen()
 {
 	return rand() % 10;

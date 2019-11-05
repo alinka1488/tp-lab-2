@@ -2,7 +2,7 @@
 
 #include "task1.h"
 
-#if false
+#if true
 int32_t main()
 {
 	int *intArray = new int[10] { 10, 2, 8, 9, 3, 6, 7, 5, 4, 1 };
