@@ -54,7 +54,7 @@ void msort(T *array, int32_t startIndex, int32_t count, T *buffer)
 };
 
 template<>
-void msort(const char **array, int32_t startIndex, int32_t count, const char **buffer)
+void msort(char **array, int32_t startIndex, int32_t count, char **buffer)
 {
 	if (count < 2)
 		return;
