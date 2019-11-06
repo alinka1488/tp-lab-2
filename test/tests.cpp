@@ -1,4 +1,5 @@
 #include "gtest/gtest.h"
+#include <iostream>
 namespace lab2
 {
 	#include "task1.h"
@@ -76,7 +77,10 @@ TEST(lab2,task1_3)
     char* expected[n]{(char*)"f", (char*)"ff", (char*)"vvv", (char*)"fff2", (char*)"ffff", (char*)"fffrr"};
     
     for(size_t i = 0; i < n; i++)
+    {
+    	std::cout << "expected: " << expected[i] << " actual: " << val[i] << std::endl;
 		EXPECT_EQ(expected[i], val[i]);
+	}
 }
 
 // task2
