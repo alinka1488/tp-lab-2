@@ -56,27 +56,6 @@ void merge(T* mas, int left, int right) {
 }
 
 
-/*void startmerge(T* mas, int left, int right) {
-	int mid = (right + left + 1) / 2;
-	
-	if (left == right)
-		return;
-	if ((right - left) > 1) {
-		startmerge(mas, left, mid - 1);
-		startmerge(mas, mid, right);
-		merge(mas, left, right);
-	}
-	else {
-		if (!compare(left, right)) {
-			T cnt;
-			cnt = mas[left];
-			mas[left] = mas[right];
-			mas[right] = cnt;
-		}
-	}
-	
-}*/
-
 template<class T>
 void msort(T* mas, int len) {
 	merge(mas, 0, len - 1);
