@@ -12,20 +12,20 @@ int main(){
 		a[i] = (rand() % 100);
 		std::cout << a[i] << " ";
 	}
-	msort<int>(a, 0, dim - 1);
+	msort<int>(a, dim - 1);
 	std::cout << "\n";
 	for (int i = 0; i < dim; i++) {
 	std::cout << a[i] << " ";
 	}
 	std::cout << "\n";
 	char str[] = "qwerty";
-	msort<char>(str, 0, strlen(str) - 1);
+	msort<char>(str, strlen(str) - 1);
 	for (int i = 0; i < strlen(str); i++) {
 		std::cout << str[i];
 	}
 	std::cout << "\n";
 	char* s[6]{ (char*)"aaaaa", (char*)"aaaa", (char*)"aa", (char*)"a", (char*)"a", (char*)"aaa" };
-	msort(s, 0, 5);
+	msort(s, 5);
 	for (int i = 0; i < 6; i++) {
 		std::cout << s[i] << " ";
 	}
