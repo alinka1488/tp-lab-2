@@ -4,9 +4,9 @@
 using namespace std;
 
 int main() {
-	int n;
-	cin >> n;
-	char * str[5] = {(char*)"hello", (char*)"he", (char*)"llo", (char*)"hello1", (char*)"h"}; 
+	const int n = 5;
+
+	char * str[n] = { (char*)"hello", (char*)"he", (char*)"llo", (char*)"hello1", (char*)"h" };
 	msort(str, n);
 	for (int i = 0; i < n; i++) {
 		cout << str[i] << "\n";
@@ -20,7 +20,8 @@ int main() {
 	for (int i = 0; i < n; i++) {
 		cout << mas[i] << "\n";
 	}
-	cin >> n;
+	int c;
+	cin >> c;
 	delete[] mas;
 	return 0;
 }
