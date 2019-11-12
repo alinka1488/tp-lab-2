@@ -1,4 +1,5 @@
 #include<stdlib.h>
+#include<string.h>
 #include<iostream>
 #include"task1.h"
 #define dim 10

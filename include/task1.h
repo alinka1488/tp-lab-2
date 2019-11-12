@@ -1,4 +1,5 @@
 #include<stdlib.h>
+#include<string.h>
 #include<iostream>
 
 template<typename T> void msort(T* arr, int size) {
