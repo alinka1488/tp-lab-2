@@ -7,8 +7,8 @@ template<class T>
 bool compare(T left, T right) {
 	return left < right;
 }
-
-bool compare(char* left, char* right) {
+template<>
+bool compare<char*>(char* left, char* right) {
 	return strlen(left) < strlen(right);
 }
 
