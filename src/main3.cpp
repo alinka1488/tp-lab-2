@@ -1,6 +1,9 @@
 #include "task3.h"
 
 template <typename T>
+T change(T item) {
+	return item + 2;
+}
 
 template <>
 char* change(char* str) {
@@ -9,6 +12,13 @@ char* change(char* str) {
 		str[i] = str[i] + 1;
 	}
 	return str;
+}
+
+template <typename T> void print_array(T* parr, int size) {
+	for (int i = 0; i < size; i++) {
+		cout << parr[i] << " ";
+	}
+	cout << endl;
 }
 
 int main() {

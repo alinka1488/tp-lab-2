@@ -10,9 +10,3 @@ void map(T* arr, T(*change) (T)) {
 	}
 }
 
-template <typename T> void print_array(T* parr, int size) {
-	for (int i = 0; i < size; i++) {
-		cout << parr[i] << " ";
-	}
-	cout << endl;
-}
