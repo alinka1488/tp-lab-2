@@ -1,5 +1,4 @@
 #pragma once
-
 template <typename T,const int N>
 void map(T* arr, T(*change)(T))
 {
