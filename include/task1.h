@@ -20,13 +20,13 @@ bool compare(char* a, char* b)
 }
 
 template <typename T>
-void mergeSort(T array[], size_t n)
+void msort(T array[], size_t n)
 {
     if (n < 2)
         return;
 
-    mergeSort(array, n / 2);
-    mergeSort(array + n / 2, n - n / 2);
+    msort(array, n / 2);
+    msort(array + n / 2, n - n / 2);
 
     T* tmp = new T[n];
     size_t leftPointer = 0, rightPointer =  n / 2, arrayPointer = 0;
