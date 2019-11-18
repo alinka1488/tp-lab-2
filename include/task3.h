@@ -2,8 +2,8 @@
 // Created by artem on 12.11.2019.
 //
 
-#ifndef TP_LAB_2_TASK3_H
-#define TP_LAB_2_TASK3_H
+#ifndef task3_h
+#define task3_h
 #include <cstddef>
 
 template<typename T, const size_t N>

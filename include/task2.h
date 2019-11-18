@@ -2,8 +2,8 @@
 // Created by artem on 12.11.2019.
 //
 
-#ifndef TP_LAB_2_TASK2_H
-#define TP_LAB_2_TASK2_H
+#ifndef task2_h
+#define task2_h
 
 #include <cstddef>
 
