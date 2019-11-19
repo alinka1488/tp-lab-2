@@ -1,5 +1,5 @@
 #pragma once
-#include <string>
+#include <cstring>
 #include <cstdlib>
 #include <iostream>
 using namespace std;
