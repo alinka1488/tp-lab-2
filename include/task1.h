@@ -1,8 +1,7 @@
 #pragma once
 #include <cstring>
 #include <cstdlib>
-#include <iostream>
-using namespace std;
+
 
 template <typename T>
 void merge(T* parr, int startLeft, int endLeft, int startRight, int endRight) {

@@ -1,4 +1,6 @@
 #include "task3.h"
+#include <iostream>
+using namespace std;
 
 template <typename T>
 T change(T item) {
@@ -20,7 +22,7 @@ template <typename T> void print_array(T* parr, int size) {
 	}
 	cout << endl;
 }
-/*
+
 int main() {
 	double ar[] = { 1.1,-2.3,3.6,4774.78,-577575.7};
 	int array[] = { 1, 4,-2, 0, -4848 };	
@@ -51,4 +53,3 @@ int main() {
 	cout << endl;
 	
 }
-*/

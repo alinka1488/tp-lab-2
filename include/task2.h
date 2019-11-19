@@ -1,8 +1,7 @@
 #pragma once
 #include <cstdlib>
 #include <cstring>
-#include <iostream>
-using namespace std;
+
 
 template<typename T, const int size> 
  T* createArr(T(*gen)()) {

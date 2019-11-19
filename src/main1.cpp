@@ -1,4 +1,6 @@
 #include "task1.h"
+#include <iostream>
+using namespace std;
 
 template <typename T> void print_array(T* parr, int size) {
 	for (int i = 0; i < size; i++) {
@@ -8,7 +10,6 @@ template <typename T> void print_array(T* parr, int size) {
 }
 
 int main() {
-	char k = '0';	
 	double arr[] = { 1.1,-2.3,3.6,4774.78,-577575.7 };
 	int array[] = { 1, 4,-2, 0, -4848 };
 	char* strings[6]{ (char*)"ffff", (char*)"fff2", (char*)"f", (char*)"ff", (char*)"vvv", (char*)"fffrr" };

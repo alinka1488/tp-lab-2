@@ -1,7 +1,6 @@
 #pragma once
 #include <cstring>
-#include <iostream>
-using namespace std;
+
 
 template <typename T,const int size>
 void map(T* arr, T(*change) (T)) {

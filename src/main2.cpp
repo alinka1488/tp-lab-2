@@ -1,4 +1,6 @@
 #include "task2.h"
+#include <iostream>
+using namespace std;
 
 template <typename T> void print_array(T* parr, int size) {
 	for (int i = 0; i < size; i++) {
@@ -28,11 +30,10 @@ char* gen()
 
 	return s;
 }
-/*
+
 int main() {
 	const int n = 5;
 	char** arr;
 	arr = createArr<char*, n>(gen);
 	print_array(arr, n);
 }
-*/
