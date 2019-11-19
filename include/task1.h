@@ -2,10 +2,6 @@
 #include<string.h>
 #include<iostream>
 
-template<typename T> void msort(T* arr, int size) {
-	mmsort(T * arr, 0, size);
-}
-
 template<typename T> void mmsort(T* arr, int left, int right) {
 	if (left == right){
 		return;
@@ -58,5 +54,7 @@ template<> void mmsort(char** arr, int left, int right){
 	}
 }
 
-
+template<typename T> void msort(T* arr, int size) {
+	mmsort(T * arr, 0, size);
+}
 
