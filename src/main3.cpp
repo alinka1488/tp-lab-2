@@ -3,6 +3,11 @@
 
 using namespace std;
 
+template<class T> T change(T value){
+	value++;
+	return value;
+}
+
 int main(){
 	char arr[] = { '1', '2', '3' };
 	const size_t size = 3;

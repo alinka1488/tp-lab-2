@@ -4,7 +4,4 @@ template<typename T, int size> void map(T *arr, T(*change)(T value)) {
 	}
 }
 
-template<class T> T change(T value){
-	value++;
-	return value;
-}
+

@@ -6,7 +6,3 @@ template<typename T, int n> T* createArr(T(*gen)()){
 	return arr;
 }
 
-template<class T> T gen(){
-	int tmp = 49;
-	return tmp;
-}
