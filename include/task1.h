@@ -58,10 +58,5 @@ template <typename T> void msort(T* parr, int size) {
 	}
 }
 
-template <typename T> void print_array(T * parr, int size) {
-	for (int i = 0; i < size; i++) {
-		cout << parr[i] << " ";
-	}
-	cout << endl;
-}
+
 

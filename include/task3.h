@@ -9,4 +9,3 @@ void map(T* arr, T(*change) (T)) {
 		arr[i] = change(arr[i]);
 	}
 }
-

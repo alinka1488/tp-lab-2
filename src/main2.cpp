@@ -1,10 +1,12 @@
 #include "task2.h"
+
 template <typename T> void print_array(T* parr, int size) {
 	for (int i = 0; i < size; i++) {
 		cout << parr[i] << " ";
 	}
 	cout << endl;
 }
+
 template<class T>
 T gen()
 {
@@ -21,11 +23,12 @@ char* gen()
 	char* s = new char[t + 1];
 
 	for (size_t i = 0; i < t; i++)
-		s[i] = '0' + i;
+		s[i] = '0' + i*2;
 	s[t] = '\0';
 
 	return s;
 }
+
 int main() {
 	const int n = 5;
 	char** arr;
