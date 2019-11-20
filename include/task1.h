@@ -55,6 +55,6 @@ template<> void mmsort(char** arr, int left, int right){
 }
 
 template<typename T> void msort(T* arr, int size) {
-	mmsort(T* arr, 0, size);
+	mmsort(arr, 0, size);
 }
 
