@@ -30,7 +30,7 @@ void merge(T* mas, int first, int last){
 	if (first == last)
 		return;
 	if (last - first == 1){
-		if (mas[right] < mas[left])
+		if (cmp(mas[last], mas[first]) == 1)
 			swap(mas[last], mas[first]);
 	}
 	int mid = (first + last)/2;
