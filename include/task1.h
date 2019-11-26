@@ -26,7 +26,7 @@ bool cmp(char* left, char* right){
 }	
 
 template<typename T>
-void merge(T* mas, int first, int last){
+void msort(T* mas, int first, int last){
 	if (first == last)
 		return;
 	if (last - first == 1){
@@ -35,8 +35,8 @@ void merge(T* mas, int first, int last){
 	}
 	int mid = (first + last)/2;
 	int size = last - first + 1;
-	merge(mas, first, mid);
-	merge(mas + mid + 1, mid + 1, last);
+	msort(mas, first, mid);
+	msort(mas + mid + 1, mid + 1, last);
 	T* buf = new T[size];
 	int start = first;
 	int end = mid + 1;
@@ -49,7 +49,7 @@ void merge(T* mas, int first, int last){
 		else if (cmp(mas[start],mas[end]) == 0)
 			buf[count++] = mas[end++];
 		else
-			buf[count++] = mas[start++]
+			buf[count++] = mas[start++];
 	}
 	for (int i = 0; i < count; i++)
 		mas[i + first] = buf[i];
