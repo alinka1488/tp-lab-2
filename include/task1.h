@@ -34,9 +34,9 @@ void merge(T* mas, int first, int last){
 			swap(mas[last], mas[first]);
 	}
 	int mid = (first + last)/2;
-	merge(first, mid);
-	merge(mid + 1, last);
 	int size = last - first + 1;
+	merge(mas, first, mid);
+	merge(mas + mid + 1, mid + 1, last);
 	T* buf = new T[size];
 	int start = first;
 	int end = mid + 1;
