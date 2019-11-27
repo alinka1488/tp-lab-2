@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include <cstring>
 #include <algorithm>
 #include <iterator>
