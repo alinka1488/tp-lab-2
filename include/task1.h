@@ -23,13 +23,13 @@ struct Comparator
 template <typename Iterator, typename Compare = Comparator>
 void merge_sort(Iterator first, Iterator last, Compare cmp = Compare {})
 {
-    const auto n = distance(first, last);
+    const auto n = std::distance(first, last);
     if (n > 1)
     {
-        const auto middle = next(first, n / 2);
+        const auto middle = std::next(first, n / 2);
         merge_sort(first, middle, cmp);
         merge_sort(middle, last, cmp);
-        inplace_merge(first, middle, last, cmp);
+        std::inplace_merge(first, middle, last, cmp);
     }
 }
 
