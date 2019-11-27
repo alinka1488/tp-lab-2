@@ -1,4 +1,6 @@
+#pragma once
 #include <stddef.h>
+#include <stdlib.h>
 #include <cstring>
 #include <algorithm>
 #include <iterator>
