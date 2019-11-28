@@ -1,5 +1,9 @@
 #include <iostream>
+#include <stddef.h>
+#include <stdlib.h>
 #include <cstring>
+#include <algorithm>
+#include <iterator>
 #include "task1.h"
 
 int main()
