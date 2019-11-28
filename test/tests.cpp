@@ -4,6 +4,12 @@ namespace lab2
 	#include "task1.h"
 	#include "task2.h"
 	#include "task3.h"
+    #include <stddef.h>
+    #include <stdlib.h>
+    #include <cstring>
+    #include <algorithm>
+    #include <iterator>
+
 	
 	template<class T>
 	T gen()
