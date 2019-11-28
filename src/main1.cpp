@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 #include "task1.h"
 
 int main()
