@@ -3,7 +3,7 @@
 #include <cstring>
 using namespace std;
 
-template <typename T> void msort(T* mas, int left, int right);
+
 
 
 template <typename T>
@@ -33,13 +33,13 @@ bool check(char* a, char* b)
 
 
 template <typename T>
-void msort(T* mas, int left,int right)
+void mersort(T* mas, int left,int right)
 {
 	if (left == right)
 		return;
 	int middle = (left + right) / 2;
-	msort(mas, left, middle);
-	msort(mas, middle + 1, right);
+	mersort(mas, left, middle);
+	mersort(mas, middle + 1, right);
 	int size = right - left + 1;
 	int ltmp = left;
 	int rtmp = middle + 1;
