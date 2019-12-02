@@ -74,4 +74,4 @@ template<> void msort(char** mas, int n) {
 		delete[] left;
 		delete[] right;
 	}
-}
+
