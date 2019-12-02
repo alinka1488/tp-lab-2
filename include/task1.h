@@ -2,6 +2,10 @@
 #include <iostream>
 #include <cstring>
 using namespace std;
+
+template <typename T> void msort(T* mas, int left, int right);
+
+
 template <typename T>
 bool check(T a,T b)
 {
