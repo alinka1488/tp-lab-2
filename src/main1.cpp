@@ -10,7 +10,7 @@ int main()
 {
 	char mas[5] = {'9','8','7','6','a'};
 
-	msort(mas, 0, 4);
+	msort(mas, 5);
 	cout << '\n';
 
 	for (int i = 0; i < 5; i++)

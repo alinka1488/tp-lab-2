@@ -60,3 +60,9 @@ void msort(T* mas, int left,int right)
 	}
 
 }
+
+template <typename T>
+void msort(T* mas, int size)
+{
+	mersort(mas, 0, size - 1);
+}
