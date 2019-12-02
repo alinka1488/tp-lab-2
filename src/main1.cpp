@@ -3,6 +3,9 @@
 #include"task1.h"
 #define dim 10
 
+template<typename T> void msort(T* mas, int n);
+template<> void msort(char** mas, int n);
+
 int main() {
 	int a[dim] = { 0 };
 	for (int i = 0; i < dim; i++)
