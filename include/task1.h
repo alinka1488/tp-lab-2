@@ -1,60 +1,77 @@
-#include<stdlib.h>
-#include<string.h>
-#include<iostream>
+#include <string.h>
+#include <iostream>
 
-template<typename T> void mmsort(T* arr, int left, int right) {
-	if (left == right){
-		return;
-	}
-	int mid = (left + right) / 2; 
-	mmsort(arr, left, mid);
-	mmsort(arr, mid + 1, right);
-	int i = left;  
-	int j = mid + 1; 
-	int* tmp = (int*)malloc(right * sizeof(int));
-	for (int step = 0; step < right - left + 1; step++){
-		if ((j > right) || ((i <= mid) && (arr[i] < arr[j]))){
-			tmp[step] = arr[i];
-			i++;
+template<typename T> void msort(T* mas, int n) {
+	if (n > 1) {
+		int mid = n / 2, i = 0, j = 0, k = 0;
+		T* left = new T[mid];
+		T* right = new T[n - mid];
+		for (i = 0; i < mid; i++) {
+			left[i] = mas[i];
+			right[i] = mas[mid + i];
 		}
-		else{
-			tmp[step] = arr[j];
-			j++;
+		if (n % 2 != 0) {
+			right[mid] = mas[n - 1];
 		}
-	}
-	for (int step = 0; step < right - left + 1; step++){
-		arr[left + step] = tmp[step];
+		msort(left, mid);
+		msort(right, n - mid);
+		i = 0;
+		for (; k < n; k++) {
+			if (i > mid - 1) {
+				mas[k] = right[j];
+				j++;
+			}
+			else if (j > n - mid - 1) {
+				mas[k] = left[i];
+				i++;
+			}
+			else if (left[i] < right[j]) {
+				mas[k] = left[i];
+				i++;
+			}
+			else {
+				mas[k] = right[j];
+				j++;
+			}
+		}
+		delete[] left;
+		delete[] right;
 	}
 }
-
-template<> void mmsort(char** arr, int left, int right){
-	if (left == right){
-		return;
-	} 
-	int mid = (left + right) / 2; 
-	mmsort(arr, left, mid);
-	mmsort(arr, mid + 1, right);
-	int i = left;  
-	int j = mid + 1; 
-	char** tmp = (char**)malloc(right * sizeof(char*));
-	for (int step = 0; step < right - left + 1; step++){
-		if ((j > right) || ((i <= mid) && (strlen(arr[i]) < strlen(arr[j]))))
-		{
-			tmp[step] = arr[i];
-			i++;
+template<> void msort(char** mas, int n) {
+	if (n > 1) {
+		int mid = n / 2, i = 0, j = 0, k = 0;
+		char** left = new char* [mid];
+		char** right = new char* [n - mid];
+		for (i = 0; i < mid; i++) {
+			left[i] = mas[i];
+			right[i] = mas[mid + i];
 		}
-		else
-		{
-			tmp[step] = arr[j];
-			j++;
+		if (n % 2 != 0) {
+			right[mid] = mas[n - 1];
 		}
-	}
-	for (int step = 0; step < right - left + 1; step++) {
-		arr[left + step] = tmp[step];
+		msort(left, mid);
+		msort(right, n - mid);
+		i = 0;
+		for (; k < n; k++) {
+			if (i > mid - 1) {
+				mas[k] = right[j];
+				j++;
+			}
+			else if (j > n - mid - 1) {
+				mas[k] = left[i];
+				i++;
+			}
+			else if (strlen(left[i]) < strlen(right[j])) {
+				mas[k] = left[i];
+				i++;
+			}
+			else {
+				mas[k] = right[j];
+				j++;
+			}
+		}
+		delete[] left;
+		delete[] right;
 	}
 }
-
-template<typename T> void msort(T* arr, int size) {
-	mmsort(T* arr, 0, size);
-}
-
