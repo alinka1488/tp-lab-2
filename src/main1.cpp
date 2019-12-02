@@ -23,7 +23,7 @@ int main() {
 	}
 	std::cout << "\n";
 	char* s[6]{ (char*)"aaaaa", (char*)"aaaa", (char*)"aa", (char*)"a", (char*)"a", (char*)"aaa" };
-	msort(s, 6);
+	msort<char*>(s, 6);
 	for (int i = 0; i < 6; i++) {
 		std::cout << s[i] << " ";
 	}
