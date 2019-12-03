@@ -19,7 +19,7 @@ int main(){
 	char stroka[] = {'1', '2', '3'};
 	const int size1 = sizeof(mas)/sizeof(int);
 	const int size2 = sizeof(massiv)/sizeof(float);
-	const int size1 = sizeof(stroka)/sizeof(char);
+	const int size3 = sizeof(stroka)/sizeof(char);
 	map<int, size1>(mas, change);
 	map<float, size2>(massiv, change);
 	map<char, size3>(stroka, change);
