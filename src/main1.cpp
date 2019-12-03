@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 	int mas1[] = { 5, 1, 7, 8, 11 };
-	char *mas2[] = { { "abc" }, { "ab" }, { "abcd" }, { "a" }, { "a" } };
+	char mas2[] = { 'f' , 'a' , 'b', 'y', 'o' };
 	msort(mas1, 5);
 	msort(mas2, 5);
 
