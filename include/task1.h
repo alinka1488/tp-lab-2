@@ -24,7 +24,7 @@ void msort(T mas[], int size){
 	if (size < 2)
 		return;
 	msort(mas, size / 2);
-	msort(mas + size / 2, size - size / 2)
+	msort(mas + size / 2, size - size / 2);
 	T* buf = new T[size];
 	int left = 0;
 	int right = size / 2;
