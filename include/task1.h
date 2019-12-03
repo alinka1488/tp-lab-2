@@ -2,12 +2,6 @@
 #include <iostream>
 #include <string.h>
 
-template<typename T>
-void swap(T* a, T* b){
-	T k = a;
-	a = b;
-	b = k;
-}
 
 template<typename T>
 bool cmp(T left, T right){
@@ -26,31 +20,25 @@ bool cmp(char* left, char* right){
 }	
 
 template<typename T>
-void msort(T* mas, int first, int last){
-	if (first == last)
+void msort(T mas[], int size){
+	if (size < 2)
 		return;
-	if (last - first == 1){
-		if (cmp(mas[last], mas[first]) == 1)
-			swap(mas[last], mas[first]);
-	}
-	int mid = (first + last)/2;
-	int size = last - first + 1;
-	msort(mas, first, mid);
-	msort(mas + mid + 1, mid + 1, last);
+	msort(mas, size / 2);
+	msort(mas + size / 2, size - size / 2)
 	T* buf = new T[size];
-	int start = first;
-	int end = mid + 1;
+	int left = 0;
+	int right = size / 2;
 	int count = 0;
-	while(last - first + 1 != count){
-		if(start > mid)
-			buf[count++] = mas[end++];
-		else if (end > last)
-			buf[count++] = mas[start++];
-		else if (cmp(mas[start],mas[end]) == 0)
-			buf[count++] = mas[end++];
+	while(left < size / 2 && right < size){
+		if(cmp(mas[left], mas[right]) == 1)
+			buf[count++] = mas[left++];
 		else
-			buf[count++] = mas[start++];
+			buf[count++] = mas[right++]
 	}
-	for (int i = 0; i < count; i++)
-		mas[i + first] = buf[i];
+	while (left < size / 2)
+        tmp[count++] = array[left++];
+    while (right < size)
+        tmp[count++] = array[right++];
+	for (int i = 0; i < size; i++)
+		mas[i] = buf[i];
 }

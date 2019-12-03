@@ -17,8 +17,9 @@ char* gen(){
 	s[t] = '\0';
 	return s;
 
-void main(){
+int main(){
 	const int n = 9;
 	char** arr;
 	arr = createArr<char*, n>(gen);
+	return 0;
 }
