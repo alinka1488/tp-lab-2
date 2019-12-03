@@ -16,6 +16,7 @@ char* gen(){
 		s[i] = '1' + i;
 	s[t] = '\0';
 	return s;
+}
 
 int main(){
 	const int n = 9;
