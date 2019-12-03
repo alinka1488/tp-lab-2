@@ -14,7 +14,7 @@ char* change(char* s){
 		s[i] = s[i] + 'x';
 	return s;
 }
-void main(){
+int main(){
 	int mas[] = {1, 2, 3};
 	float massiv[] = {1.2, 2.3, 3.4};
 	char stroka[] = {'1', '2', '3'};
@@ -24,4 +24,5 @@ void main(){
 	map<int, size1>(mas, change);
 	map<float, size2>(massiv, change);
 	map<char, size3>(stroka, change);
+	return 0;
 }
