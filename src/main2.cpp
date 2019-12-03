@@ -12,7 +12,7 @@ T gen()
 	return elem;
 }
 
-void main()
+int main()
 {
 	const int n = 10;
 	int *mas;
