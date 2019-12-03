@@ -33,7 +33,7 @@ void msort(T mas[], int size){
 		if(cmp(mas[left], mas[right]) == 1)
 			buf[count++] = mas[left++];
 		else
-			buf[count++] = mas[right++]
+			buf[count++] = mas[right++];
 	}
 	while (left < size / 2)
         buf[count++] = mas[left++];
