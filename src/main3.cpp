@@ -1,5 +1,5 @@
 #include "task3.h"
-#include <iostram>
+#include <iostrеam>
 
 
 template<typename T>
