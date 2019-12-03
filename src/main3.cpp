@@ -9,7 +9,7 @@ T change(T elem)
 	return elem * 2;
 }
 
-void main()
+int main()
 {
 	const int n = 5;
 	int mas[n] = {1, 2, 3, 4, 5};
