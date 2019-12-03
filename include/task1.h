@@ -36,9 +36,9 @@ void msort(T mas[], int size){
 			buf[count++] = mas[right++]
 	}
 	while (left < size / 2)
-        tmp[count++] = array[left++];
+        buf[count++] = mas[left++];
     while (right < size)
-        tmp[count++] = array[right++];
+        buf[count++] = mas[right++];
 	for (int i = 0; i < size; i++)
 		mas[i] = buf[i];
 }
