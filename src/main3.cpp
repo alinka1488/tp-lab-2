@@ -10,7 +10,7 @@ T change(T elem) {
 
 int main() {
 	const int N = 5;
-	int * Arr = new int[n];
+	int * Arr = new int[N];
 	for (int i = 1; i < 6; i++) {
 		Arr[i - 1] = i;
 	}
