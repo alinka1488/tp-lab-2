@@ -52,7 +52,7 @@ template<> void msort(char **mas, int n) {
 		msort(rightHalf, n - mid);
 		i = 0;
 		j = 0;
-		k = 0
+		k = 0;
 		for (; k < n; k++) {
 			if (i > mid - 1) {
 				mas[k] = rightHalf[j];
