@@ -4,6 +4,12 @@
 using namespace std;
 
 
+template <typename T>
+T gen()
+{
+	return rand() % 100;
+}
+
 int main() 
 {
 	const int n = 15;

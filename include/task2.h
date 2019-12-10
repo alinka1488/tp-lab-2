@@ -1,13 +1,6 @@
 
 #pragma once
-#include <string.h>
 
-
-template <typename T>
-T gen()
-{
-return rand()%100;
-}
 
 template <typename T, const int N>
 T *createArr(T(*gen)())

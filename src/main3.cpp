@@ -4,6 +4,12 @@
 using namespace std;
 
 
+template <typename T>
+T change(T element)
+{
+	return element + 5;
+}
+
 int main()
 {
 const int n = 5;
