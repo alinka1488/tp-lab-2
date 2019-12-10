@@ -12,6 +12,5 @@ int main()
 	{
 		cout << array[i] << " ";
 	}
-	cin.get();
 	return 0;
 }

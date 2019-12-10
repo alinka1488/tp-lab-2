@@ -17,6 +17,5 @@ char array_c[n] = { 'a', 'b', 'c', 'd', 'e' };
 map<char, n>(array_c, change);
 for (int i = 0; i < n; i++)
 cout << array_c[i] << " ";
-cin.get();
 return 0;
 }

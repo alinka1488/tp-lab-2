@@ -22,6 +22,5 @@ int main()
 		cout << array_c[i] << ' ';
 	}
 	cout << '\n';
-	cin.get();
 	return 0;
 }
