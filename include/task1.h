@@ -2,6 +2,7 @@
 #define task1_h
 #include <cstring>
 #include <algorithm>
+using namespace std;
 template <typename T> bool comparator (T &a, T&b){ //сравниваем два элемента по их значению
     return a <= b;
 }
@@ -20,7 +21,7 @@ template <typename T> void mergeSort(T * array, int begin, int end){
     }
     if ( end - begin == 2){ // если два элемента в обратном порядке, свопаем их
         if (!comparator(array[begin], array[begin+1])){
-            std::swap(array[begin], array[begin+1]);
+            swap(array[begin], array[begin+1]);
         }
         return;
     }
