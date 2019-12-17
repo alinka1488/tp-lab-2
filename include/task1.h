@@ -1,7 +1,5 @@
 #ifndef task1_h
 #define task1_h
-#include <cstring>
-#include <algorithm>
 using namespace std;
 template <typename T> bool comparator (T &a, T&b){ //сравниваем два элемента по их значению
     return a <= b;
