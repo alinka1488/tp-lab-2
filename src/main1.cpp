@@ -10,11 +10,11 @@ int main()
 			std::cout<<int_array[i]<<" ";
 	std::cout<<std::endl;
 
-	const size_t float_array_length = 10;
-	double *float_array = new float[float_array_length]{0.0, 2.4, 56.3, 7.12, 4.908, 700.56, 287.436, 63.90, 123.43, 493.10};
-	msort(float_array, float_array_length);
-	for(size_t i = 0; i < float_array_length; i++)
-		std::cout<<float_array[i]<<" ";
+	const size_t double_array_length = 10;
+	double *double_array = new double[double_array_length]{0.0, 2.4, 56.3, 7.12, 4.908, 700.56, 287.436, 63.90, 123.43, 493.10};
+	msort(double_array, double_array_length);
+	for(size_t i = 0; i < double_array_length; i++)
+		std::cout<<double_array[i]<<" ";
 	std::cout<<std::endl;
 
 	const size_t char_array_length = 10;
