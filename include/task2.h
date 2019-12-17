@@ -4,7 +4,7 @@
 #include <cstring>
 
 template<class T>
-T gen()
+T my_gen()
 {
     return 2019;
 }

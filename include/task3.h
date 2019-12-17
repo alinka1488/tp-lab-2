@@ -4,7 +4,7 @@
 #include <cstring>
 
 template<class T>
-T change(T main_value)
+T my_change(T main_value)
 {
     return main_value * 2;
 }
