@@ -13,7 +13,7 @@ template <> bool comparator(char * &a, char * &b){ //спецификации ш
    return strlen(a) <= strlen(b);
 }
 
-template <> bool comparator(const char * a, const char * b){
+template <> bool comparator(const char * &a, const char * &b){
    return strlen(a) <= strlen(b);
 }
 
