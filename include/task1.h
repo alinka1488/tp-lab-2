@@ -9,7 +9,7 @@ template <typename T> bool comparator (T &a, T&b){ //сравниваем два
     return a <= b;
 }
 
-template <> bool comparator(char * a, char * b){ //спецификации шаблона для типа char // сравниваем два элемента по их длине
+template <> bool comparator(char * &a, char * &b){ //спецификации шаблона для типа char // сравниваем два элемента по их длине
    return strlen(a) <= strlen(b);
 }
 
