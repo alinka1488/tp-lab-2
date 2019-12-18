@@ -1,11 +1,15 @@
 #ifndef task1_h
 #define task1_h
 using namespace std;
-template <typename T> bool comparator (T &a, T&b){ //сравниваем два элемента по их значению
+
+//Написать шаблонную функцию msort, сортирующую массив элементов T слиянием. 
+//Если тип элемента массива char*, то производится сортировка по длине строк.
+
+template <typename T> bool comparator (T &a, T&b){ //сравниваем два элемента по их значению передавая два элемента по ссылке
     return a <= b;
 }
 
-template <> bool comparator(char * &a, char * &b){ //сравниваем два элемента по их длине
+template <> bool comparator(char * &a, char * &b){ //спецификации шаблона для типа char // сравниваем два элемента по их длине
    return strlen(a) <= strlen(b);
 }
 

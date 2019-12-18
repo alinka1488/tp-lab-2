@@ -6,6 +6,9 @@
 using namespace std;
 
 int main(int argc, const char * argv[]) {
+
+    //Написать шаблонную функцию msort, сортирующую массив элементов T слиянием. 
+    //Если тип элемента массива char*, то производится сортировка по длине строк.
     
     float array[] = {1.03,2.35,2.33,3,4,5,7,6};
     char* array1[] = {(char*)"ffff", (char*)"fff2", (char*)"f", (char*)"ff", (char*)"vvv", (char*)"fffrr"};
