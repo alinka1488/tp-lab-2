@@ -4,6 +4,12 @@ namespace lab2
 	#include "task1.h"
 	#include "task2.h"
 	#include "task3.h"
+    #include <stddef.h>
+    #include <stdlib.h>
+    #include <cstring>
+    #include <algorithm>
+    #include <iterator>
+
 	
 	template<class T>
 	T gen()
@@ -71,9 +77,9 @@ TEST(lab2,task1_2)
 TEST(lab2,task1_3)
 {
 	const size_t n = 6;
-	char* val[n]{(char*)"ffff", (char*)"fff2", (char*)"f", (char*)"ff", (char*)"vvv", (char*)"fffrr"};
+	char* val[n]{(char*)"ffff", (char*)"fff222", (char*)"f", (char*)"ff", (char*)"vvv", (char*)"fffrr"};
 	lab2::msort(val, n);
-    char* expected[n]{(char*)"f", (char*)"ff", (char*)"vvv", (char*)"fff2", (char*)"ffff", (char*)"fffrr"};
+    char* expected[n]{(char*)"f", (char*)"ff", (char*)"vvv", (char*)"ffff", (char*)"fffrr", (char*)"fff222"};
     
     for(size_t i = 0; i < n; i++)
 		EXPECT_EQ(expected[i], val[i]);
